@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -20,12 +21,9 @@ nav {
     background-color: #ffffff;
     width: 860px;
     height: 100%;
-    text-align: right;
     display: flex;
     justify-content: flex-end;
     font-family: 'Merriweather', serif;
-
-
 }
 
 a:any-link {
@@ -46,30 +44,6 @@ a:any-link {
 }
 
 
- .topnav { 
- 
-     overflow: hidden;
-    background-color: white;
-    width: 75%; 
-}
-
- .topnav a {
-    float: right;
-    text-align: center;
-    padding: 18px 8px;
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    width: 18%;
-    color: #666666;
-    margin-top: 8px;
-} 
-
- .topnav a:hover {
-    background-color: #4aaaa5;
-    opacity: 0.5;
-} 
-
 .link {
     
     border-right: 1px solid black;
@@ -87,17 +61,14 @@ h2 {
     text-align: left;
     color: #4aaaa5;
     margin-top: 20px;
-    width: 960px;   
+    width: 100%;   
     clear: both;
     font-family: 'Merriweather', serif;
     padding-top: 18px;
     padding-left: 20px;
 }
 
-hr {
-    width: 960px;    
 
-}
 img {
     clear: both;
     height: 200px;
@@ -160,6 +131,8 @@ footer {
     Width: 100%;
     bottom: 0;
     padding-top: 30px;
+    position: fixed;
+    
 }
 
 @media only screen and (max-width: 980px) {
@@ -190,9 +163,29 @@ footer {
     #body {
         width: 100%;
     }
-    header {
+
+    
+
+     header {
+        flex-direction: column;
         position: static;
+        height: 150px;
+       
+     } 
+
+    #name {
+        width: 100%;
+        
 
     }
+
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        
+        
+    }
+   
 
   }

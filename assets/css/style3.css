@@ -20,7 +20,6 @@ nav {
     background-color: #ffffff;
     width: 860px;
     height: 100%;
-    /* float: left; */
     text-align: right;
     display: flex;
     justify-content: flex-end;
@@ -64,7 +63,7 @@ h2 {
     text-align: left;
     color: #4aaaa5;
     margin-top: 20px;
-    width: 960px;   
+    width: 100%;   
     clear: both;
     font-family: 'Merriweather', serif;
     padding-top: 18px;
@@ -72,9 +71,7 @@ h2 {
 }
 
 
-hr {
-    width: 960px;   
-}
+
 
 
 footer {
@@ -94,7 +91,7 @@ footer {
 }
 
 #body {
-    width: 960px;
+    width: 100%;
     margin: auto;
     background: white;
     line-height: 30px;
@@ -155,3 +152,43 @@ footer {
 h3 {
     font-weight: 300;
 }
+
+@media only screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+
+    #body {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    #body {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+
+    #body {
+        width: 100%;
+    }
+
+    
+
+     header {
+        flex-direction: column;
+        position: static;
+        height: 150px;
+       
+     }
+
+    }
